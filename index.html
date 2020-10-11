@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using Bootstrap</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- pliki CSS: -->
+    <!-- oryginalny Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="./css/style.css" media="screen">
+    <link rel="stylesheet" href="./css/animate.css" media="screen">
+    <link rel="stylesheet" href="./css/responsive_as.css" media="screen">
+    <!-- czcionka Open Sans-->    
+    <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext">    
+    
+  </head>
+  <body>
+
+    <!--###############################-->
+    <!-- MENU GÓRNE ###################-->
+    <!--###############################-->
+
+   <header id="menu" class="navbar-fixed-top">
+       <div class="container">
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <nav class="navbar navbar-inverse" role="navigation" id="pasek_nawi">
+                   <div class="container-fluid">
+                       <div class="navbar-header">
+                           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#moje-menu">
+                               <span class="sr-only">Nawigacja</span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                           </button>
+                           <div id="logo">
+                            <a href="#" class="navbar-brand">
+                              <img src="./images/logo3.png" style='width:100px' alt="logo2" class="img-responsive"/>
+                            </a>
+                           </div>
+                       </div>
+                       <div id="moje-menu" class="collapse navbar-collapse">
+                       <!-- ul.nav.navbar-nav.navbar-right>(li>a[href="#"]{link$})*5 -->
+                           <ul class="nav navbar-nav navbar-right" id="ul_nawigacja">
+                               <li class="active"><a href="#">Home</a></li>
+                               <li><a href="#nowosci">Nowości</a></li>
+                               <li><a href="#onas">O nas</a></li>
+                               <li><a href="#zespol">Zespół</a></li>
+                               <li><a href="#logoIkony">Logo</a></li>
+                               <li><a href="#promocje">Promocje</a></li>
+                               <li><a href="#kontakt">Kontakt</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </nav>
+           </div>
+       </div>
+   </header>
+   
+    <!--###############################-->
+    <!--Carousel ######################-->
+    <!--###############################-->
+
+    <div id="pokaz-slijdow" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#pokaz-slijdow" data-slide-to="0" class="active"></li>
+        <li data-target="#pokaz-slijdow" data-slide-to="1"></li>
+        <li data-target="#pokaz-slijdow" data-slide-to="2"></li>
+        <li data-target="#pokaz-slijdow" data-slide-to="3"></li>
+        <li data-target="#pokaz-slijdow" data-slide-to="4"></li>
+        <li data-target="#pokaz-slijdow" data-slide-to="5"></li>
+        <li data-target="#pokaz-slijdow" data-slide-to="6"></li>
+        <li data-target="#pokaz-slijdow" data-slide-to="7"></li>
+        <li data-target="#pokaz-slijdow" data-slide-to="8"></li>
+<!--         <li data-target="#pokaz-slijdow" data-slide-to="9"></li> -->
+                                                       
+      </ol>        
+      <div class="carousel-inner">
+          <div class="item active">
+            <img src="./images/carousel/slide1.jpg" alt="slide1" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>KLM Jumbo Jet</h1>
+              <p>747 Jumbo Jet Airlines</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./images/carousel/slide2.jpg" alt="slide2" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>Super big airplane</h1>
+              <p>landing under the beach</p>
+            </div>            
+          </div>
+          <div class="item">
+            <img src="./images/carousel/slide3.jpg" alt="slide3" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>Boeing - Jumbo Jet</h1>
+              <p>landing under the road</p>
+            </div>            
+          </div>  
+          <div class="item">
+            <img src="./images/carousel/slide4.png" alt="slide4" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>Boeing - Jumbo Jet</h1>
+              <p>landing under the road</p>
+            </div>            
+          </div> 
+          <div class="item">
+            <img src="./images/carousel/slide5.jpg" alt="slide5" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>Boeing - Jumbo Jet</h1>
+              <p>landing under the road</p>
+            </div>            
+          </div> 
+          <div class="item">
+            <img src="./images/carousel/slide6.jpg" alt="slide3" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>Boeing - Jumbo Jet</h1>
+              <p>landing under the road</p>
+            </div>            
+          </div> 
+          <div class="item">
+            <img src="./images/carousel/slide7.jpg" alt="slide3" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>Boeing - Jumbo Jet</h1>
+              <p>landing under the road</p>
+            </div>            
+          </div> 
+          <div class="item">
+            <img src="./images/carousel/slide8.jpg" alt="slide3" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>Boeing - Jumbo Jet</h1>
+              <p>landing under the road</p>
+            </div>            
+          </div> 
+          <div class="item">
+            <img src="./images/carousel/slide9.jpg" alt="slide3" class="img-responsive">
+            <div class="carousel-caption">
+              <h1>Boeing - Jumbo Jet</h1>
+              <p>landing under the road</p>
+            </div>            
+          </div> 
+                                                        
+
+      </div>
+
+        <a href="#pokaz-slijdow" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#pokaz-slijdow" class="start right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        
+    </div>
+
+    <!--###############################-->
+    <!--NOWOŚCI #######################-->
+    <!--###############################-->
+
+    <section id="nowosci">
+      <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h2><span class="naglowek_czerwony">Nowości</span> w ofercie</h2>
+              <h4>Zapraszamy do zapoznania się z wyjątkowym samolotem, jest duży i piękny</h4>
+            </div>
+        <div class="row">
+          <div class="panel-group" id="menu_harmonijkowe">
+
+            <!-- nowosci element 1 -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel nowosci_panel">
+              <div class="panel-heading">
+                <a href="#nowosci01" data-toggle="collapse" data-parent="#menu_harmonijkowe">
+                  <h3>The latest big plane</h3>
+                  <h6>Very large | Super fast | new tecnology
+                  <span class="glyphicon glyphicon-chevron-right"></span>  
+                  </h6>
+                </a>
+              </div>
+              <div id="nowosci01" class="panel-collapse collapse">
+                <div class="panel-body">
+                    This aircraft features KLM's Economy Comfort seats. These seats are part of the Economy class cabin but feature an extra 4 inches of legroom. These seats are available to Flying Blue Platinum members and passengers flying on full Economy class tickets at no extra cost. Flying Blue Gold and Silver members receive a discount while other passengers will pay an extra fee for access to these seats.
+                </div>
+              </div>
+            </div>
+
+            <!-- nowosci element 2 -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel nowosci_panel">
+              <div class="panel-heading">
+                <a href="#nowosci02" data-toggle="collapse" data-parent="#menu_harmonijkowe">
+                  <h3>Comfort for passangers</h3>
+                  <h6>glad | nice | comfortable
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  </h6>
+                </a>
+              </div>
+              <div id="nowosci02" class="panel-collapse collapse">
+                <div class="panel-body">
+                    There a narrow passage to the toilet, which is at times totally overcrowded because the second toilet can not be seen from the economy comfort zone. Passengers and even staff keep bumping into the the seat, even pushing the back of it. If you're right-handed beware that passing staf can - and do - bump into your elbow knocking your food over your lap.
+                </div>
+              </div>
+            </div>
+
+            <!-- nowosci element 3 -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel nowosci_panel">
+              <div class="panel-heading">
+                <a href="#nowosci03" data-toggle="collapse" data-parent="#menu_harmonijkowe">
+                  <h3>First fly and attempt</h3>
+                  <h6>dangerous | fearness | hoppness
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  </h6>
+                </a>
+              </div>
+              <div id="nowosci03" class="panel-collapse collapse">
+                <div class="panel-body">
+                    First time flying on KLM for myself. Seat 1oA in the economy comfort was outstanding. For those of us that like some more room, yet can't cough up the money for business, economy comfort is the way to go. Due to the fact the economy comfort section is closed off by a wall (the galley) it gives the cabin a very secluded feel and is very quite. I spent about $200 USD on top of the ticket price to sit in the economy comfort section for a 10 hour flight from LAX to Amsterdam... It was worth every penny! 
+                </div>
+              </div>
+            </div>            
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <a href="#" class="btn btn-success btn-lg">zobacz wszystkie nowości</a>
+                    </div>
+                </div>
+            </div>
+
+          </div>          
+        </div>
+      </div>
+    </section>
+     
+
+    <!--###############################-->
+    <!--O NAS #########################-->
+    <!--###############################-->
+
+    <hr/>
+    <section id="onas">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onas_naglowek">
+              <h2>O nas - the biggest <strong>planes</strong></h2>
+              <h4>There were a few successfull vertion of the plane Jumbo Jet</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="thumbnail">
+                <img src="./icons/icon1.png" alt="ikon1" class="img-responsive img-rounded">
+              
+                <h3>KLM as Jumbo Jet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </div> 
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="thumbnail">
+                <img src="./icons/icon2.jpg" alt="ikon1" class="img-responsive img-rounded">
+              
+                <h3>Airbus A-380</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </div> 
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="thumbnail">
+                <img src="./icons/icon3.jpg" alt="ikon1" class="img-responsive img-rounded">
+              
+                <h3>Jumbo Jet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+              </div> 
+            </div>
+          </div>
+        </div> 
+    </section> 
+
+    <!--###################################-->
+    <!--Prezentacja liczbowa ##############-->
+    <!--###################################-->
+
+    <hr/>
+    <section id="liczby">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <h3>AirBus i bezpieczeństwo w liczbach
+                <br/>
+                Sam  oceń
+                </h3>
+            </div> 
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="liczby_kafelek">
+                  <h1>0</h1>
+                  <h5/>Katastrof</h5>  
+                </div>
+            </div> 
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="liczby_kafelek">
+                  <h1>3</h1>
+                  <h5/>Kolizje na lądzie</h5>
+                </div>
+            </div> 
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                <div class="liczby_kafelek">
+                  <h1>998</h1>
+                  <h5/>Wyprodukowano</h5>
+                </div>
+            </div>                                                
+          </div>
+        </div>
+    </section>
+                      
+    <!--###############################-->
+    <!--ZESPÓŁ#########################-->
+    <!--###############################-->
+
+    <hr/>
+    <section id="zespol">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 zespol_naglowek">
+              <h2>Zespół - The misterious of great success</h2>
+              <h4>Ous team contain high professional engeneers</h4>
+            </div>
+          </div> 
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="nav nav-pills zespol_przyciski">
+                  <li class="active"><a href="#zespol" data-toggle="tab">Zespół Roboczy</a></li>
+                  <li><a href="#obsluga" data-toggle="tab">Obsługa Klienta</a></li>
+                  <li><a href="#zarzad" data-toggle="tab">Zarząd Główny</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="tab-content zespol_ikonki">
+                <!-- zakładka 1 - content -->
+                  <div class="tab-pane active fade in" id="zespol">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+                        <img src="./images/pracownik_01.jpg" alt="" class="img-responsive img-rounded pull-left">
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                        <h5>Członek - Jaś Przyziemski</h5>
+                        <h3>Osoba najzabawniejsza w zespole</h3> 
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minima esse, vero ducimus ipsam. Non ea eum, nemo rem natus unde, in amet iste fuga nulla cumque, reprehenderit tempora quod.  
+                        </p>
+                        <h2>
+                            <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-book"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-picture"></span></a>  
+                        </h2>
+                        
+                      </div>                      
+                    </div>
+                  </div>
+                  <!-- zakładka 2 - content -->
+                  <div class="tab-pane fade" id="obsluga">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+                        <img src="./images/pracownik_02.jpg" alt="" class="img-responsive img-rounded pull-left">
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                        <h5>Obsługa</h5>
+                        <h3>Obsługa gdy trzba daje z siebie wszystko</h3> 
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minima esse, vero ducimus ipsam. Non ea eum, nemo rem natus unde, in amet iste fuga nulla cumque, reprehenderit tempora quod.  
+                        </p>
+                        <h2>
+                            <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-book"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-picture"></span></a>  
+                        </h2>
+                        
+                      </div>                      
+                    </div>
+                  </div>
+                  <!-- zakładka 3 - content -->
+                  <div class="tab-pane fade" id="zarzad">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-6">
+                        <img src="./images/pracownik_03.jpg" alt="" class="img-responsive img-rounded pull-left">
+                      </div>
+                      <div class="col-xs-12 col-sm-7 col-md-7 col-lg-6">
+                        <h5>Zarząd</h5>
+                        <h3>Robią wszystko aby rządzić najlepiej</h3> 
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto minima esse, vero ducimus ipsam. Non ea eum, nemo rem natus unde, in amet iste fuga nulla cumque, reprehenderit tempora quod.  
+                        </p>
+                        <h2>
+                            <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-book"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-picture"></span></a>  
+                        </h2>
+                        
+                      </div>                      
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+    <section id="wspolpracownicy">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wspolpracownicy_naglowek">
+              <h2>Współprawownicy</h2>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam adipisci reprehenderit a odio. Itaque tempore cum.
+            </div>
+          </div> 
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <a href="#"><img src="./images/person1.jpg" alt="" class="img-responsive img-circle wspolpracownicy_foto" /></a>
+                  <h3>Leokadia Kokoszka</h3>
+                  <p>Lider zepołu informatycznego</p>
+                  <h2>
+                    <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                  </h2>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <a href="#"><img src="./images/person2.jpg" alt="" class="img-responsive img-circle wspolpracownicy_foto" /></a>
+                  <h3>Eugenia Bober</h3>
+                  <p>Najlepsza w obsłudze klienta</p>
+                  <h2>
+                    <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                  </h2>
+              </div>
+                                          <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <a href="#"><img src="./images/person3.jpg" alt="" class="img-responsive img-circle wspolpracownicy_foto" /></a>
+                  <h3>Antoni Kosiba</h3>
+                  <p>Główny machr zarządzania</p>
+                  <h2>
+                    <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                  </h2>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <a href="#"><img src="./images/person4.jpg" alt="" class="img-responsive img-circle wspolpracownicy_foto" /></a>
+                  <h3>Lepold Świniarski</h3>
+                  <p>Główny ekonomista, wybitny w swoim rodzaju</p>
+                  <h2>
+                    <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+                  </h2>
+              </div>              
+            </div>
+        </div>
+    </section>
+
+    <!--###############################-->
+    <!--OFERTA LOGO   #################-->
+    <!--###############################-->
+
+    <hr/>
+    <section id="logoIkony">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logo_naglowek">
+              <h2>Przykłady Logo</h2>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consequatur ut optio qui, deserunt nulla natus molestiae.
+              </h4>
+            </div>
+          </div> 
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-4 logo_zdjecia"> 
+                <a href="#oferta1" data-toggle="modal">
+                  <img src="./images/photos/photo1.png" alt="" class="img-responsive img-rounded"/>
+                </a>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 logo_zdjecia"> 
+                <a href="#oferta2" data-toggle="modal">
+                  <img src="./images/photos/photo2.png" alt="" class="img-responsive img-rounded"/>
+                </a>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 logo_zdjecia"> 
+                <a href="#oferta3" data-toggle="modal">
+                  <img src="./images/photos/photo3.jpg" alt="" class="img-responsive img-rounded"/>
+                </a>
+              </div>                            
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-4 logo_zdjecia"> 
+                <a href="#oferta4" data-toggle="modal">
+                  <img src="./images/photos/photo4.png" alt="" class="img-responsive img-rounded"/>
+                </a>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 logo_zdjecia"> 
+                <a href="#oferta5" data-toggle="modal">
+                  <img src="./images/photos/photo5.jpg" alt="" class="img-responsive img-rounded"/>
+                </a>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 logo_zdjecia"> 
+                <a href="#oferta6" data-toggle="modal">
+                  <img src="./images/photos/photo6.jpg" alt="" class="img-responsive img-rounded"/>
+                </a>
+              </div>                            
+            </div>            
+        </div>
+    </section>   
+
+    
+    
+    <!--###############################-->
+    <!-- Nasi Klienci #################-->
+    <!--###############################-->
+
+    <hr/>
+    <section id="klienci">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h2>Nasi klienci</h2>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consequatur ut optio qui, deserunt nulla natus molestiae.
+              </h4>
+            </div>
+          </div> 
+
+          <div class="row">
+              <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"> 
+                <img src="./images/klient_logo_01.png" alt="" class="img-responsive">
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"> 
+                <img src="./images/klient_logo_02.png" alt="" class="img-responsive">
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"> 
+                <img src="./images/klient_logo_03.png" alt="" class="img-responsive">
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"> 
+                <img src="./images/klient_logo_04.png" alt="" class="img-responsive">
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"> 
+                <img src="./images/klient_logo_05.png" alt="" class="img-responsive">
+              </div>
+              <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2"> 
+                <img src="./images/klient_logo_06.png" alt="" class="img-responsive">
+              </div>                                                                      
+          </div>
+        </div>
+    </section>
+
+    <!--###############################-->
+    <!--PROMOCJE ######################-->
+    <!--###############################-->
+ 
+    <hr/>
+    <section id="promocje">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 promocje_naglowek">
+              <h2>Promocje</h2>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consequatur ut optio qui, deserunt nulla natus molestiae.
+              </h4>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="./images/bilety.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h3>Oferta dla kontrahentów</h3>
+                <h5><span class="glyphicon glyphicon-ok"></span> Bon podarunkowy</h5>
+                <p>Cupiditate aperiam nostrum quasi autem tempore molestiae eaque, in officiis aspernatur hic, impedit suscipit eum dolorem ducimus mollitia ea doloribus asperiores incidunt.</p>
+            </div>  
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h3>Oferta dla Klientów</h3>
+                <h5><span class="glyphicon glyphicon-ok"></span> Bon przedawniony</h5>
+                <p>Cupiditate aperiam nostrum quasi autem tempore molestiae eaque, in officiis aspernatur hic, impedit suscipit eum dolorem ducimus mollitia ea doloribus asperiores incidunt.</p>
+            </div>                       
+          </div>
+        </div>
+    </section>  
+
+     <!--###############################-->
+    <!--WYPRZEDAŻ #####################-->
+    <!--###############################-->
+
+
+    <hr/>
+    <section id="wyprzedaz">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 wyprzedaz_naglowek">
+              <h2>Wyprzedaż</h2>
+              <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consequatur ut optio qui, deserunt nulla natus molestiae.
+              </h4>
+            </div>
+          </div> 
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="wyprzedaz_kafelek_naglowek">
+                  <img src="./images/wyprzedaz_01.png" alt="" class="img-responsive wyprzedaz_zdjecie">
+                </div>
+                <div class="wyprzedaz_kafelek_opis">
+                  <h3>Lot czarterowy</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eveniet vitae odio autem in fugiat temporibus perspiciatis necessitatibus.
+                  </p>
+                </div>  
+                  <a href="#" alt="" class="btn btn-success btn-lg">Kup teraz</a>
+                
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="wyprzedaz_kafelek_naglowek">
+                  <img src="./images/wyprzedaz_02.png" alt="" class="img-responsive wyprzedaz_zdjecie">
+                </div>
+                <div class="wyprzedaz_kafelek_opis">
+                  <h3>Lot klasą biznes</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eveniet vitae odio autem in fugiat temporibus perspiciatis necessitatibus.
+                  </p>
+                </div>  
+                  <a href="#" alt="" class="btn btn-success btn-lg">Kup teraz</a>
+                
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="wyprzedaz_kafelek_naglowek">
+                  <img src="./images/wyprzedaz_03.png" alt="" class="img-responsive wyprzedaz_zdjecie">
+                </div>
+                <div class="wyprzedaz_kafelek_opis">
+                  <h3>Lot czarterowy</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eveniet vitae odio autem in fugiat temporibus perspiciatis necessitatibus.
+                  </p>
+                </div>  
+                  <a href="#" alt="" class="btn btn-success btn-lg">Kup teraz</a>
+                
+            </div>                        
+          </div>
+        </div>
+    </section>
+     
+    <!--###############################-->
+    <!--KONTAKT #######################-->
+    <!--###############################-->
+
+    <hr/>
+    <section id="kontakt">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h2>Kontakt</h2>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h5>Some information</h5>
+              <p>Quam ipsum impedit praesentium cupiditate corporis modi recusandae, autem sint inventore numquam?</p>
+              <h5>Other information</h5>
+              <p>Quam ipsum impedit praesentium cupiditate corporis modi recusandae, autem sint inventore numquam?</p>
+              <h5>Call Us</h5>
+              <h3>+48 603-03- 03-03</h3>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+                <form action="">
+                    <div class="form-group">
+                        <label for="uzytkownik" class="control-lable">Imię i Nazwisko</label>
+                        <input type="text" class="form-control" name="uzytkownik" placeholder="Imię i Nazwisko"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="control-lable">Email</label>
+                        <input type="text" class="form-control" name="email" placeholder="Adres email"/>
+                    </div> 
+                    <div class="form-group">
+                        <label for="komentarz" class="control-lable">Komentarz</label>
+                        <textarea class="form-control" name="komentarz" placeholder="Komentarz.." rows="5" title="Write everything what you want" data-toggle="tooltip" data-placement="top"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-lg">Wyślij</button>
+                    </div>                                                           
+                </form>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <!--###############################-->
+    <!--STOPKA ########################-->
+    <!--###############################-->
+
+    <hr/>
+    <section id="stopka">
+        <div class="container">
+          <footer class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              <h4>Copyright 2016 &copy; Projekt as example</h4>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <a href="#"><img src="icons/facebook.png" alt="" class="img-responsive"></a>
+                    <a href="#"><img src="icons/googleplus.png" alt="" class="img-responsive"></a>
+                    <a href="#"><img src="icons/twitter.png" alt="" class="img-responsive"></a>
+                    <a href="#"><img src="icons/vimeo.png" alt="" class="img-responsive"></a>  
+            </div>
+          </footer>
+        </div> 
+  </section>  
+
+
+    <!-- teksty dla okien modalnych -->
+
+    <!-- kurs 1 -->
+      <div id="oferta1" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3>Image in modal 1</h3>
+            </div>
+            <div class="modal-body">
+              <p>
+                <img src="images/photos/photo1.png" alt="" class="img-responsive">
+                <br>
+                Modal one
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal" >zamknij</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- kurs 2 -->
+      <div id="oferta2" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h3>Image in modal 2</h3>
+            </div>
+            <div class="modal-body">
+              <p>
+                <img src="images/photos/photo2.png" alt="" class="img-responsive">
+                <br>
+                Modal two
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal" >zamknij</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- kurs 3 -->
+      <div id="oferta3" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Image in modal 3</h3>
+            </div>  
+            <div class="modal-body">
+              <p>
+                <img src="images/photos/photo3.jpg" alt="" class="img-responsive">
+                <br>
+                Modal three  
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal" >zamknij</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- kurs 4 -->
+      <div id="oferta4" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Image in modal 4</h3>
+            </div>            
+            <div class="modal-body">
+              <p>
+                <img src="images/photos/photo4.png" alt="" class="img-responsive">
+                <br>
+                Modal four
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal" >zamknij</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- kurs 5 -->
+      <div id="oferta5" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Image in modal 5</h3>
+            </div>             
+            <div class="modal-body">
+              <p>
+                <img src="images/photos/photo5.jpg" alt="" class="img-responsive">
+                <br>
+                Modal five
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal" >zamknij</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- kurs 6 -->
+      <div id="oferta6" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>Image in modal 6</h3>
+            </div>             
+            <div class="modal-body">
+              <p>
+                <img src="images/photos/photo6.jpg" alt="" class="img-responsive">
+                <br>
+                Modal six
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal" >zamknij</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                  
+
+
+
+
+
+
+    <!-- sekcja JavaScript  -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+    $("textarea").tooltip();
+
+    // $('.nav li a').on('click', function() {
+    //     //alert('clicked');
+    //     $(this).parent().parent().find('.active').removeClass('active');
+    //     $(this).parent().addClass('active');
+    // });
+        </script>    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+/* media dla menu i slider */
+@media(min-width: 1200px) {
+	html {
+		font-size:60%;
+		line-height: 1.2rem;
+	}
+}
+@media(min-width: 992px) and (max-width: 1199px) {
+	html {
+		font-size:50%;
+		line-height: 1.2rem;
+	}
+	.carousel-caption {
+		top: 200px;
+	}
+		
+
+}
+@media(min-width: 768px) and (max-width: 991px) {
+	html {
+		font-size:40%;
+		line-height: 1.2rem;
+	}
+	.carousel-caption {
+		top: 150px;
+	}	
+}
+
+/* media dla slider */
+@media(min-width: 550px) and (max-width: 767px) {
+	.carousel-caption h1,
+	.carousel-caption p {
+		font-size:2rem;
+		line-height: 1.2rem;
+	}
+	.carousel-caption {
+		top: 100px;
+	}	
+}
+@media(max-width: 549px) {
+	.carousel-caption h1,
+	.carousel-caption p {
+		font-size:2rem;
+		line-height: 1.2rem;
+	}
+	.carousel-caption {
+		top: 50px;
+	}	
+}
+
+@media(max-width: 767px) {
+	#klienci {
+		/*height: 60rem;*/
+		height: 160%;
+	}
+	.block {
+		/*margin-right: -20px;*/
+		/*margin-left: -20px;*/
+	}
+}
+
+
