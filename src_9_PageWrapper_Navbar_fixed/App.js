@@ -8,7 +8,7 @@ import Features from './components/Features';
 import MoreDeets from './components/MoreDeets';
 import Pricing from './components/Pricing';
 import Footer from './components/Footer';
-import Burgers from './components/Burgers';
+// import './styles/PageContainer.css';
 
 function App() {
   return (
@@ -21,9 +21,6 @@ function App() {
             <Switch>
               <Route exact path="/">
                 <Home />
-              </Route>
-              <Route path="/burgers">
-                <Burgers />
               </Route>
               <Route path="/Features">
                 <Features />

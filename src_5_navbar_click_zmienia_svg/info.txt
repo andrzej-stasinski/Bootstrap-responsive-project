@@ -1,0 +1,31 @@
+
+Przełączenie koloru
+Gdy click w icone - home - powinna zmienic się od razu a zmienia się po drugim click
+Click w Princing- powinno zmienić ikonę home od razu ale zmienia za drugim razem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

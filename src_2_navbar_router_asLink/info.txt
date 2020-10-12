@@ -1,0 +1,36 @@
+
+Wyliminowanie siania error
+Użyto zaostosowanie z infoShare
+-------------------------------
+Zamiast
+            <Link to='/features'>
+                <Nav.Link href="#features">Features</Nav.Link>
+            </Link>
+Użyto
+            <Nav.Link as={NavLink} to="features"> Features </Nav.Link>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

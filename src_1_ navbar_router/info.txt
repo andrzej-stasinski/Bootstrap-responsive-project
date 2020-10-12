@@ -1,0 +1,56 @@
+Navbar z Router 
+=======================
+wada - sieje error
+
+NavBar & Router
+-----------------------------------
+https://www.youtube.com/watch?v=jG4bat4WoNM
+
+Wykonanie
+======================
+instalacja bootstrap
+----------------------
+npm install react-bootstrap bootstrap
+
+podpiêcie css
+----------------------
+public/index.html
+<link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+    />
+
+lub
+
+index.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+Router
+-----------------------
+npm install react-router-dom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

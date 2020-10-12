@@ -1,0 +1,38 @@
+
+
+
+Dla Desktop
+po lewej ikona svg, menu po prawej
+
+dla Mobile
+menu humburger po prawej
+
+każdy click w menu lub ikone home - podjaśnia element
+
+Nie sieje error dla DIV w index
+Dla Strict.Mode w index - sieje error ale tylko gdy click na menu hamburger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

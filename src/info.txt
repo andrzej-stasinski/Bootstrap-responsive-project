@@ -1,0 +1,41 @@
+
+Navbar & Footer
+==================
+Navbar - ok
+Footer - ok
+
+Użycie fontawesome
+==================
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<i class="fas fa-home-lg-alt"></i>
+
+src 1
+===================
+npm install firebase
+config w index.js
+Burgers - fetch w componentDidMount
+zamiana obj firebase na array
+state - ustalić co ma być i zrobić widok w Table
+state - dodać pobrane dane do state - dane te teraz będą w widoku
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+.App {
+  /* text-align: center; */
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrap {
+flex: 1;
+}
+.klasa {
+color: green;
+}
